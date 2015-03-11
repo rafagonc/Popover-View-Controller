@@ -29,7 +29,7 @@ The currently avaliable animations type are:
 * `shouldDismissOnBackgroundTap` : Specifies if the obfuscation view should dimisss the popover on tap.
 * `shouldObfuscateSourceViewController` : Specifies if the popover should add a black view over the source view controller. This view also dismiss the popover on tap.
 * `obfuscationAlpha` : Amount of alpha of the obfuscation view.
-
+* `cornerRadius` : View rounded corner radius
 
 ###Full Reference
 
