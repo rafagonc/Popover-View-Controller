@@ -6,14 +6,31 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		2ABDE9BB1AAFF2E500D5247F /* appledoc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2ABDE9BC1AAFF2E500D5247F /* Build configuration list for PBXAggregateTarget "appledoc" */;
+			buildPhases = (
+				2ABDE9BF1AAFF2F000D5247F /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = appledoc;
+			productName = appledoc;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		08C2F3341AAA62A500615A00 /* TestPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C2F3321AAA62A500615A00 /* TestPopoverViewController.m */; };
+		08C2F3351AAA62A500615A00 /* TestPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C2F3331AAA62A500615A00 /* TestPopoverViewController.xib */; };
 		2A9BC4DC1AA9471C0052A527 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC4DB1AA9471C0052A527 /* main.m */; };
 		2A9BC4DF1AA9471C0052A527 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC4DE1AA9471C0052A527 /* AppDelegate.m */; };
-		2A9BC4E21AA9471C0052A527 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC4E11AA9471C0052A527 /* ViewController.m */; };
-		2A9BC4E51AA9471C0052A527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9BC4E31AA9471C0052A527 /* Main.storyboard */; };
 		2A9BC4E71AA9471C0052A527 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9BC4E61AA9471C0052A527 /* Images.xcassets */; };
 		2A9BC4EA1AA9471C0052A527 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9BC4E81AA9471C0052A527 /* LaunchScreen.xib */; };
 		2A9BC4F61AA9471C0052A527 /* PopoverLabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC4F51AA9471C0052A527 /* PopoverLabTests.m */; };
+		2A9BC5021AA94BDA0052A527 /* LabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC5001AA94BDA0052A527 /* LabViewController.m */; };
+		2A9BC5031AA94BDA0052A527 /* LabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9BC5011AA94BDA0052A527 /* LabViewController.xib */; };
+		2A9BC5081AA94F140052A527 /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC5071AA94F140052A527 /* PopoverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +44,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08C2F3311AAA62A500615A00 /* TestPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPopoverViewController.h; sourceTree = "<group>"; };
+		08C2F3321AAA62A500615A00 /* TestPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPopoverViewController.m; sourceTree = "<group>"; };
+		08C2F3331AAA62A500615A00 /* TestPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestPopoverViewController.xib; sourceTree = "<group>"; };
 		2A9BC4D61AA9471C0052A527 /* PopoverLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopoverLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9BC4DA1AA9471C0052A527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A9BC4DB1AA9471C0052A527 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A9BC4DD1AA9471C0052A527 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A9BC4DE1AA9471C0052A527 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2A9BC4E01AA9471C0052A527 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2A9BC4E11AA9471C0052A527 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2A9BC4E41AA9471C0052A527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A9BC4E61AA9471C0052A527 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2A9BC4E91AA9471C0052A527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2A9BC4EF1AA9471C0052A527 /* PopoverLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopoverLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9BC4F41AA9471C0052A527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A9BC4F51AA9471C0052A527 /* PopoverLabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopoverLabTests.m; sourceTree = "<group>"; };
+		2A9BC4FF1AA94BDA0052A527 /* LabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabViewController.h; sourceTree = "<group>"; };
+		2A9BC5001AA94BDA0052A527 /* LabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabViewController.m; sourceTree = "<group>"; };
+		2A9BC5011AA94BDA0052A527 /* LabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabViewController.xib; sourceTree = "<group>"; };
+		2A9BC5061AA94F140052A527 /* PopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewController.h; sourceTree = "<group>"; };
+		2A9BC5071AA94F140052A527 /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +103,11 @@
 		2A9BC4D81AA9471C0052A527 /* PopoverLab */ = {
 			isa = PBXGroup;
 			children = (
-				2A9BC4DD1AA9471C0052A527 /* AppDelegate.h */,
-				2A9BC4DE1AA9471C0052A527 /* AppDelegate.m */,
-				2A9BC4E01AA9471C0052A527 /* ViewController.h */,
-				2A9BC4E11AA9471C0052A527 /* ViewController.m */,
-				2A9BC4E31AA9471C0052A527 /* Main.storyboard */,
-				2A9BC4E61AA9471C0052A527 /* Images.xcassets */,
-				2A9BC4E81AA9471C0052A527 /* LaunchScreen.xib */,
-				2A9BC4D91AA9471C0052A527 /* Supporting Files */,
+				2ABDE9BA1AAFF16100D5247F /* Popover Subclass */,
+				2A9BC5041AA94EFB0052A527 /* Suport */,
+				2A9BC5051AA94F010052A527 /* Lab View Controller */,
+				2A9BC5061AA94F140052A527 /* PopoverViewController.h */,
+				2A9BC5071AA94F140052A527 /* PopoverViewController.m */,
 			);
 			path = PopoverLab;
 			sourceTree = "<group>";
@@ -117,6 +136,38 @@
 				2A9BC4F41AA9471C0052A527 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A9BC5041AA94EFB0052A527 /* Suport */ = {
+			isa = PBXGroup;
+			children = (
+				2A9BC4DD1AA9471C0052A527 /* AppDelegate.h */,
+				2A9BC4DE1AA9471C0052A527 /* AppDelegate.m */,
+				2A9BC4E61AA9471C0052A527 /* Images.xcassets */,
+				2A9BC4E81AA9471C0052A527 /* LaunchScreen.xib */,
+				2A9BC4D91AA9471C0052A527 /* Supporting Files */,
+			);
+			name = Suport;
+			sourceTree = "<group>";
+		};
+		2A9BC5051AA94F010052A527 /* Lab View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A9BC4FF1AA94BDA0052A527 /* LabViewController.h */,
+				2A9BC5001AA94BDA0052A527 /* LabViewController.m */,
+				2A9BC5011AA94BDA0052A527 /* LabViewController.xib */,
+			);
+			name = "Lab View Controller";
+			sourceTree = "<group>";
+		};
+		2ABDE9BA1AAFF16100D5247F /* Popover Subclass */ = {
+			isa = PBXGroup;
+			children = (
+				08C2F3311AAA62A500615A00 /* TestPopoverViewController.h */,
+				08C2F3321AAA62A500615A00 /* TestPopoverViewController.m */,
+				08C2F3331AAA62A500615A00 /* TestPopoverViewController.xib */,
+			);
+			name = "Popover Subclass";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,10 +219,15 @@
 				TargetAttributes = {
 					2A9BC4D51AA9471C0052A527 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 8P5355PV9G;
 					};
 					2A9BC4EE1AA9471C0052A527 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 8P5355PV9G;
 						TestTargetID = 2A9BC4D51AA9471C0052A527;
+					};
+					2ABDE9BB1AAFF2E500D5247F = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -190,6 +246,7 @@
 			targets = (
 				2A9BC4D51AA9471C0052A527 /* PopoverLab */,
 				2A9BC4EE1AA9471C0052A527 /* PopoverLabTests */,
+				2ABDE9BB1AAFF2E500D5247F /* appledoc */,
 			);
 		};
 /* End PBXProject section */
@@ -199,9 +256,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A9BC4E51AA9471C0052A527 /* Main.storyboard in Resources */,
+				08C2F3351AAA62A500615A00 /* TestPopoverViewController.xib in Resources */,
 				2A9BC4EA1AA9471C0052A527 /* LaunchScreen.xib in Resources */,
 				2A9BC4E71AA9471C0052A527 /* Images.xcassets in Resources */,
+				2A9BC5031AA94BDA0052A527 /* LabViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +272,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2ABDE9BF1AAFF2F000D5247F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"Popover View Controller\";\ncompanyID=\"Rafael Gonçalves\";\ncompanyURL=\"http://rafaelgoncalves.me\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"~/help\";\n# End constants\n/usr/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A9BC4D21AA9471C0052A527 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A9BC4E21AA9471C0052A527 /* ViewController.m in Sources */,
+				2A9BC5081AA94F140052A527 /* PopoverViewController.m in Sources */,
 				2A9BC4DF1AA9471C0052A527 /* AppDelegate.m in Sources */,
 				2A9BC4DC1AA9471C0052A527 /* main.m in Sources */,
+				08C2F3341AAA62A500615A00 /* TestPopoverViewController.m in Sources */,
+				2A9BC5021AA94BDA0052A527 /* LabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +320,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2A9BC4E31AA9471C0052A527 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A9BC4E41AA9471C0052A527 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2A9BC4E81AA9471C0052A527 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,7 +348,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rafael Gonzalves (A7R335TQR4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rafael Gonzalves (A7R335TQR4)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -297,9 +366,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "58c15125-0226-453b-8d56-08aa93f80713";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,7 +392,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rafael Gonzalves (A7R335TQR4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rafael Gonzalves (A7R335TQR4)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -333,8 +404,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "58c15125-0226-453b-8d56-08aa93f80713";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -345,9 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PopoverLab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "893ac2a3-d1d9-4f92-97d2-b6298b4bb7ad";
 			};
 			name = Debug;
 		};
@@ -355,9 +431,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PopoverLab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "893ac2a3-d1d9-4f92-97d2-b6298b4bb7ad";
 			};
 			name = Release;
 		};
@@ -365,6 +445,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -376,6 +458,7 @@
 				INFOPLIST_FILE = PopoverLabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopoverLab.app/PopoverLab";
 			};
 			name = Debug;
@@ -384,6 +467,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -391,7 +476,22 @@
 				INFOPLIST_FILE = PopoverLabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopoverLab.app/PopoverLab";
+			};
+			name = Release;
+		};
+		2ABDE9BD1AAFF2E500D5247F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2ABDE9BE1AAFF2E500D5247F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -414,12 +514,22 @@
 				2A9BC4FB1AA9471C0052A527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A9BC4FC1AA9471C0052A527 /* Build configuration list for PBXNativeTarget "PopoverLabTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A9BC4FD1AA9471C0052A527 /* Debug */,
 				2A9BC4FE1AA9471C0052A527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ABDE9BC1AAFF2E500D5247F /* Build configuration list for PBXAggregateTarget "appledoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ABDE9BD1AAFF2E500D5247F /* Debug */,
+				2ABDE9BE1AAFF2E500D5247F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
