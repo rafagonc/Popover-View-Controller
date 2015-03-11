@@ -15,6 +15,8 @@ Example:
 }
 ```
 
+**Warning** : Due memory management, dont use popover view controller as an ivar/property or a class instance variable. Instantiate a new one every time you present.
+
 ###Animations
 
 The currently avaliable animations type are:
