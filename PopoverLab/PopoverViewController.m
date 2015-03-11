@@ -283,6 +283,11 @@
     _animator = animator;
     [_animator setPopover:self];
 }
+-(void)setCornerRadius:(CGFloat)cornerRadius {
+    _cornerRadius = cornerRadius;
+    self.view.layer.masksToBounds = YES;
+    self.view.layer.cornerRadius = cornerRadius;
+}
 
 #pragma mark - Dealloc
 -(void)didReceiveMemoryWarning {

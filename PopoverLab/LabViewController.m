@@ -23,6 +23,7 @@
 -(instancetype)init {
     if (self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil]) {
         popover = [[TestPopoverViewController alloc] init];
+        popover.cornerRadius = 4;
     } return self;
 }
 

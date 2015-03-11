@@ -74,6 +74,10 @@ typedef enum : NSUInteger {
  *  Amount of alpha of the obfuscation view.
  */
 @property (nonatomic) CGFloat obfuscationAlpha;
+/*!
+ *  View rounded corner radius
+ */
+@property (nonatomic) CGFloat cornerRadius;
 
 
 @end
