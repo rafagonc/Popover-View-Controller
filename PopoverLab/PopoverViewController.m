@@ -81,6 +81,7 @@
     UIViewController *destinationViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UIViewController *sourceViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     CGRect screenBounds = [UIScreen mainScreen].bounds;
+    self.shouldLayoutSubviews = NO;
 
     
     if (self.presenting) {
@@ -88,7 +89,6 @@
         destinationViewController.view.frame = CGRectMake(screenBounds.size.width/2 - self.frame.size.width/2, screenBounds.size.height + 70, self.frame.size.width, self.frame.size.height);
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0 usingSpringWithDamping:.8 initialSpringVelocity:3 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            self.shouldLayoutSubviews = NO;
             destinationViewController.view.frame = self.frame;
             [self obfuscateViewController:container];
             [container bringSubviewToFront:destinationViewController.view];
@@ -98,9 +98,7 @@
         }];
     } else {
         [container addSubview:sourceViewController.view];
-
         [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0 usingSpringWithDamping:.8 initialSpringVelocity:3 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            self.shouldLayoutSubviews = NO;
             sourceViewController.view.frame = CGRectMake(screenBounds.size.width/2 - self.frame.size.width/2, screenBounds.size.height + 70, self.frame.size.width, self.frame.size.height);
             [self unobfuscateViewController:container];
 
@@ -185,6 +183,7 @@
         [[context viewControllerForKey:UITransitionContextToViewControllerKey] dismissViewControllerAnimated:YES completion:nil];
     }
 }
+
 @end
 @implementation PopoverViewController
 
@@ -217,13 +216,15 @@
     self.shouldLayoutSubviews = YES;
     
     self.modalPresentationStyle = UIModalPresentationCustom;
-    self.transitioningDelegate = self.animator;
+    [self setTransitioningDelegate:self.animator];
+
 }
 
 #pragma mark - Layout
 -(void)viewDidLoad {
     [super viewDidLoad];
-    self.shadow = YES;
+//    self.shadow = YES;
+//    self.cornerRadius = 0;
 }
 -(void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
@@ -231,12 +232,16 @@
 
 }
 
-#pragma Dimiss
+#pragma mark - Overrides
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self setAnimator:_animator];
+    [self setTransitioningDelegate:self.animator];
+}
 -(void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
     [super dismissViewControllerAnimated:flag completion:^{
         if (completion) completion();
         [self setTransitioningDelegate:nil];
-        [self setAnimator:nil];
     }];
 }
 
@@ -282,6 +287,11 @@
 -(void)setAnimator:(PopoverViewControllerTransitionAnimator *)animator {
     _animator = animator;
     [_animator setPopover:self];
+    [_animator setShouldDismissOnBackgroundTap:_shouldDismissOnBackgroundTap];
+    [_animator setShouldObfuscateSourceViewController:_shouldObfuscateSourceViewController];
+    [_animator setObfuscationAlpha:_obfuscationAlpha];
+    [_animator setDuration:_duration];
+    [_animator setAnimationType:_animationType];
 }
 -(void)setCornerRadius:(CGFloat)cornerRadius {
     _cornerRadius = cornerRadius;
@@ -294,6 +304,7 @@
     [super didReceiveMemoryWarning];
 }
 -(void)dealloc {
+    [self setAnimator:nil];
 }
 
 @end

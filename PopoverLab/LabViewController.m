@@ -11,7 +11,6 @@
 
 @interface LabViewController ()
 {
-    TestPopoverViewController *popover;
 }
 
 @end
@@ -22,8 +21,6 @@
 #pragma mark - Constructos
 -(instancetype)init {
     if (self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil]) {
-        popover = [[TestPopoverViewController alloc] init];
-        popover.cornerRadius = 4;
     } return self;
 }
 
@@ -39,28 +36,43 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.translucent = YES;
-
+    
+    self.animationType = PopoverViewControllerAnimationTypeCoverVertical;
+    self.duration = 0.5;
+    self.shadow = YES;
+    self.shouldObfuscateSourceViewController = YES;
+    self.shouldDismissOnBackgroundTap = YES;
+    self.cornerRadius = 0;
 }
 
 #pragma mark - Actions
 -(IBAction)present:(id)sender {
-    [self presentViewController:popover animated:YES completion:nil];
+    TestPopoverViewController *pop = [[TestPopoverViewController alloc] init];
+    pop.animationType = self.animationType;
+    pop.shadow = self.shadow;
+    pop.shouldDismissOnBackgroundTap = self.shouldDismissOnBackgroundTap;
+    pop.shouldObfuscateSourceViewController = self.shouldObfuscateSourceViewController;
+    pop.duration = self.duration;
+    pop.cornerRadius = self.cornerRadius;
+    [self presentViewController:pop animated:YES completion:nil];
 }
 -(IBAction)segmentedChangeValue:(id)sender {
-    popover.animationType = self.segmentedControl.selectedSegmentIndex;
+    self.animationType = self.segmentedControl.selectedSegmentIndex;
 }
 -(IBAction)durationSlider:(UISlider *)sender {
-    popover.duration = sender.value;
+    self.duration = sender.value;
 }
 -(IBAction)dismissOnTapSwitch:(UISwitch *)sender {
-    popover.shouldDismissOnBackgroundTap = sender.on;
+    self.shouldDismissOnBackgroundTap = sender.on;
 }
 -(IBAction)shadowSwitch:(UISwitch *)sender {
-    popover.shadow = sender.on;
+    self.shadow = sender.on;
 }
 -(IBAction)obfuscateSourceSwitch:(UISwitch *)sender {
-    popover.shouldObfuscateSourceViewController = sender.on;
-    
+    self.shouldObfuscateSourceViewController = sender.on;
+}
+- (IBAction)cornerRadiusSlider:(UISlider *)sender {
+    self.cornerRadius = sender.value;
 }
 
 #pragma mark - Dealloc
